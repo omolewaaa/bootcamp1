@@ -1,45 +1,26 @@
 class vehicle{
-	constructor(plateNum, yearOfProduction, color){
+	constructor(plateNum, colour){
 	this.plateNum = plateNum;
-	this.yearOfProduction = yearOfProduction;
+	this.colour = colour
 	}
-	  getPlateNum(){
-	    return this.plateNum
-	  }
-
-      getYearOfProduction(){
-        return this.yearOfProduction
-      }
-      getColor(){
-      	return this.color
+      vehicleColor(){
+      	return this.colour
       }
 }
 class bus extends vehicle{
-	constructor(plateNum, yearOfProduction,color, numOfSeat){
-		super(plateNum, yearOfProduction, color);
-		this.numOfSeat = numOfSeat
-		this.num = [];
+	constructor(plateNum, color, seatNum){
+		super(plateNum,color);
+		this.seatNum = seatNum
 	}
-		peopleEnterBus(humanBeing){
-			this.num.push(humanBeing);
-		}
-		
-		peopleInsideBus(){
-			for(humanBeing in this.num){
-			console.log (humanBeing.toString());		}
-	        }
+		vehicleColor(){
+		    super.vehicleColor();
         }
-      getNumOfSeat(){
-      	return this.numOfSeat;
-      }
     }
 
 class trailer extends vehicle{
-	constructor(plateNum, yearOfProduction, color, numOfWheels){
-		super(plateNum, yearOfProduction, color)
+	constructor(plateNum, color, numOfWheels){
+		super(plateNum, color)
 		this.numOfWheels = numOfWheels;
 	}
-	getBus(){
-		return this.bus;
-	}
+	
 }
