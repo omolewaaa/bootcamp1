@@ -13,7 +13,7 @@ class bus extends vehicle{
 		this.seatNum = seatNum
 	}
 		vehicleColor(){
-		    console.log("the color of the bus is blue");
+		    console.log("The bus has no color");
         }
     }
 
